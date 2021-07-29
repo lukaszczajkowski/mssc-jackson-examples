@@ -6,11 +6,11 @@ import org.springframework.boot.test.autoconfigure.json.JsonTest;
 import org.springframework.test.context.ActiveProfiles;
 
 @JsonTest
-@ActiveProfiles("snake")
-public class BeerDtoSnakeTest extends BaseTest {
+@ActiveProfiles("kebab")
+public class BeerDtoKebabTest extends BaseTest{
 
     @Test
-    void testSnake() throws JsonProcessingException {
+    void testKebab() throws JsonProcessingException {
         BeerDto dto = getDto();
 
         String json = objectMapper.writeValueAsString(dto);
